@@ -31,6 +31,7 @@ def exponent(element):
         cuadrado = element*element
         cubo = element*element*element
         return f"cuadrado: {cuadrado}, cubo: {cubo}"
+
     
 # Exercise 3:
 def Fahrenheit(Celsius):
@@ -63,3 +64,5 @@ def validador_2(name, lastname, age, dni, phonenumber):
         return f"name: {name}, last name: {lastname}, age: {age}, dni: {dni}, phone number: {phonenumber}"
     else:
         return "check that the data is correct"
+    
+
