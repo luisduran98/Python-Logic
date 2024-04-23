@@ -1,49 +1,78 @@
+from math import pi
+
 # --------------------{ DOCSTRING }----------------------------------------
 
-# def suma(a: int, b: int)-> int:
-#     """sumatoria de los dos parametros (a + b)
+def suma(a: int, b: int)-> int:
+    """sumatoria de los dos parametros (a + b)
 
-#     Args:
-#         a (int): primer valor entero
-#         b (int): segundo valor entero
+    Args:
+        a (int): primer valor entero
+        b (int): segundo valor entero
 
-#     Returns:
-#         int: resultado de la suma de (a + b)
-#     """
-#     return a + b
+    Returns:
+        int: resultado de la suma de (a + b)
+    """
+    return a + b
 
-# a = int(input("Coloca un numero: "))
-# b = int(input("Coloca otro numero: "))
+a = int(input("Coloca un numero: "))
+b = int(input("Coloca otro numero: "))
 
-# print(suma(a,b))
+print(suma(a,b))
 
 # -------------------------------------------------------------
 
-# def suma()-> int:
-#     """ Debes escribir por consola dos numeros enteros 
+def suma()-> int:
+    """ Debes escribir por consola dos numeros enteros 
 
-#     Returns:
-#         int: devuelve la sumatoria de los numeros solicitados
-#     """
-#     a = int(input("Coloca un numero: "))
-#     b = int(input("Coloca otro numero: "))
+    Returns:
+        int: devuelve la sumatoria de los numeros solicitados
+    """
+    a = int(input("Coloca un numero: "))
+    b = int(input("Coloca otro numero: "))
 
-#     return a + b
+    return a + b
 
-# print(suma())
+print(suma())
 
 # --------------------------------------------------------------
 
-# def suma()-> None:
-#     """Debes escribir por consola dos numeros enteros 
+def suma()-> None:
+    """Debes escribir por consola dos numeros enteros 
 
-#     Args:
-#         a (int): primer valor entero
-#         b (int): segundo valor entero
-#     """
-#     a = int(input("Coloca un numero: "))
-#     b = int(input("Coloca otro numero: "))
-#     print(a + b)
+    Args:
+        a (int): primer valor entero
+        b (int): segundo valor entero
+    """
+    a = int(input("Coloca un numero: "))
+    b = int(input("Coloca otro numero: "))
+    print(a + b)
 
-# suma()
+suma()
 
+# -----------------------------------------------------------
+
+def calcular_perimetro_circunferencia(radio: float)-> float:
+    """ De acuerdo al parametro calcula el perimetro de una circunferencia 
+
+    Args:
+        radio (int): valor que pertenece al radio
+
+    Returns:
+        int: devuelve el perimetro
+    """
+    return 2 * pi * radio
+
+# ----------------------------------------------------
+
+def calcular_perimetro_rectangulo(base: float, altura: float)-> float:
+    """De acuerdo a los parametros calcula el perimetro de un rectangulo 
+
+    Args:
+        base (float): valor de la base
+        altura (float): valor de la altura
+
+    Returns:
+        float: devuelve el perimetro
+    """
+    return base * 2 + altura * 2
+    
