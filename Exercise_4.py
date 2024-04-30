@@ -39,8 +39,9 @@ while True:
             if not flag_saludar :
                 print("Hola deberiamos conocernos antes de brindar no?")
             else:
-                flag_brindar = 1
                 brindar() 
+                flag_brindar = 1
+                
         case "3":
             if not flag_saludar:
                 print("Pero aun no me saludaste...")
