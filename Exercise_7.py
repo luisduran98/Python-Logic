@@ -1,3 +1,4 @@
+from os import system
 # Tarea pedir 10 numeros usando una lista y calcular la sumatoria, el promedio, el mayor y cuantas veces esta repetido.
 
 lista = []
@@ -8,6 +9,7 @@ for i in range(10):
     numeros = int(input("Coloca un numero aca: "))
     suma += numeros
     lista.append(numeros)
+    system("cls")
 
 mayor = 0
 
