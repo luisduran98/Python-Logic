@@ -50,19 +50,24 @@ def buscar_entero(lista:list, target:int)->int:
             return i
     return -1
 
-CANT = 5
-MIN = 1
-MAX = 10
+def ordenar_lista(lista:list, valor:bool)->None:
+ 
+    for i in range(len(lista) - 1):
+        for j in range(i + 1, len(lista)):
+            if lista[i] > lista[j]:
+                lista[i], lista[j] = lista[j], lista[i]
+    print(lista)
+    
 
-numeros = crear_lista_entero_random(CANT,MIN,MAX)
-print(numeros)
+def sorteador(lista:list)->None:
+    from time import sleep
+    from random import randint as random
+    resultado = random(0,len(lista) - 1)
+    sleep(3)
+    print(f"El ganador es {resultado}, recibe tu premio {lista[resultado]}")
 
 
-# sumatoria = sumar_lista(numeros)
-# print(sumatoria)
+lista = crear_lista_entero_random(10, 1, 10)
+print(lista)
 
-# promedio = promedio_lista(numeros)
-
-# print(promedio) 
-
-# print(buscar_entero(numeros, 5))
+ordenar_lista_ascendente(lista)
