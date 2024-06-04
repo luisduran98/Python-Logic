@@ -70,4 +70,4 @@ def sorteador(lista:list)->None:
 lista = crear_lista_entero_random(10, 1, 10)
 print(lista)
 
-ordenar_lista_ascendente(lista)
+# ordenar_lista_ascendente(lista)

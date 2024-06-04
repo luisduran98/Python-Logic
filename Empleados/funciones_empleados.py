@@ -36,13 +36,13 @@ def new_empleado(legajo: int, nombre: str, apellido: str, genero: str, edad: int
     return empleados
 
 def mostrar_empleados(lista_empleados: list)->None:
-    print("             ***Lista de Empleados***")
-    print("  Legajo    Nombre    Apellido    Genero    Edad    Calle   Localidad    Provincia    Email    Sector   Sueldo")
-    print("---------------------------------------------------------------")
+    print("                                               ***Lista de Empleados***")
+    print("  Legajo    Nombre     Apellido      Genero    Edad          Calle         Localidad       Provincia          Email                            Sector          Sueldo")
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
     for i in range(len(lista_empleados)):
         mostrar_empleado(lista_empleados[i])
     print()
 
 
 def mostrar_empleado(un_empleado: dict)->None:
-    print(f"  {un_empleado["legajo"]}  {un_empleado["nombre"]:>15} {un_empleado["apellido"]:>15} {un_empleado["genero"]} {un_empleado["edad"]:>15} {un_empleado["calle"]:>15} {un_empleado["localidad"]:>15} {un_empleado["provincia"]:>15} {un_empleado["email"]:>15} {un_empleado["sector"]:>15} {un_empleado["sueldo"]:10.2f}")
+    print(f"  {un_empleado["legajo"]:<8}  {un_empleado["nombre"]:<10} {un_empleado["apellido"]:<15} {un_empleado["genero"]:<8} {un_empleado["edad"]:<10} {un_empleado["calle"]:<15} {un_empleado["localidad"]:<15} {un_empleado["provincia"]:<18} {un_empleado["email"]:<32} {un_empleado["sector"]:<15} {un_empleado["sueldo"]:<10.2f}")

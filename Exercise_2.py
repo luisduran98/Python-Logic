@@ -66,3 +66,6 @@ def validador_2(name, lastname, age, dni, phonenumber):
         return "check that the data is correct"
     
 
+   
+    
+
