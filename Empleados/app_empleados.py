@@ -49,6 +49,20 @@ def busqueda_por_sector(sector:str)->None:
         if not flag_encontrado:
             print("no hay empleados con ese sector")
 
+def filtrar_empleados_sector(lista:list, sector:str)->list:
+    lista_retorno = []
+    for i in range(len(lista)):
+            if lista[i]["sector"] == sector.capitalize():
+                lista_retorno.append(lista[i])
+    return lista_retorno
+
+
+# def mostrar_promedio_de_sector(lista:list,sector:str)->None:
+#     empleados_filtrados = filtrar_empleados_sector(lista,sector)
+
+#     for elem in empleados_filtrados:
+
+
 
 def mostrar_promedio_de_sector(sector:str)->None:
     cant_sueldos = 0 
