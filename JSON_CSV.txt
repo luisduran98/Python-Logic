@@ -1,0 +1,67 @@
+# JSON
+
+# import json
+# archivo = open("./modificado.json","r", encoding = "utf-8")
+# prueba = json.load(archivo) # /// lee y guarda, lo tranforma a diccionario
+# archivo.close
+
+# import json
+# with open("./modificado.json","w", encoding = "utf-8") as archivo:
+#   json.dump(prueba[0:5], archivo) # /// recibe dos parametros, en archivos la direccion del path y en personas ar archivo que se crea
+
+# -------------------------------------------------------------------------------------------------------------------------------------------
+
+# CVS / Archivos
+
+# a:append - agregar
+# w: wread - escribir
+# r: read - lectura
+# rb: lectura binaria
+# wb: escritura binaria
+# wa: append binario
+# x : crea el archivo
+# . = carpeta raiz
+# / = directorio
+
+# metodos:
+# strip(): te limpia el texto de los espacios, con strip(/n) cortas el espacio que hay entre lineas
+# read():
+# readline(): para mostrar una sola linea
+# readlines(): colocas todas las lineas en una lista iterable 
+# import os / os.getcwdb()
+
+# caso 1
+# archivo = open("nombre del archivo.txt","tipo de archivo", encoding = "utf-8" ) abrir
+# datos = archivo.read() usar
+# archivo.close(archivo) cerrar
+
+# caso 2
+# with open("nombre del archivo.txt","tipo de archivo", encoding = "utf-8" ) as archivo
+    # datos = archivo.read() usar
+
+# caso 3 : es para buscar la direccion del archivo
+
+# import os
+# path = os.getcwdb()
+# path = os.path.join(path,"nombre del archivo.txt")
+
+# with open(path,"tipo de archivo", encoding = "utf-8" ) as archivo
+    # datos = archivo.read() usar
+
+# caso 4 ejemplos con with:
+
+# with open(obtener_path("prueba.txt"), encoding = "utf-8" ) as archivo:
+#     contenido = archivo.readline()
+#     print(contenido)
+
+# with open(obtener_path("prueba.csv"),"r", encoding = "utf-8" ) as archivo:
+#     archivo.write("hola \n")
+#     archivo.write("hola \n")
+#     archivo.write("hola \n")
+  
+# with open(obtener_path("prueba.csv"),"r", encoding = "utf-8" ) as archivo:
+#     for line in archivo.readlines():
+#         dato = line.strip("\n")
+#         print(dato)
+
+# -------------------------------------------------------------------------------------------------------------------------------------------
